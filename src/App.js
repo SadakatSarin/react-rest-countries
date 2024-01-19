@@ -26,7 +26,10 @@ function LaodCountries() {
     <div>
 
       <h1>countries</h1>
-      <h3>available countries:{ countries.length}</h3>
+      <h3>available countries:{countries.length}</h3>
+      {
+        countries.map(country => <p>{ country.name.common}</p>)
+      }
 
     </div>
   );
