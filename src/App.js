@@ -28,7 +28,7 @@ function LaodCountries() {
       <h1>countries</h1>
       <h3>available countries:{countries.length}</h3>
       {
-        countries.map(country => <p>{ country.name.common}</p>)
+        countries.map(country => <Country name={country.name.common} population={ country.population}></Country> )
       }
 
     </div>
@@ -38,7 +38,16 @@ function LaodCountries() {
 }
 
 
+function Country(props) {
+  
+  return (
+    <div>
+      <h2>Name:{props.name}</h2>
+      <h4>population:{ props.population}</h4>
 
+    </div>
+  )
+}
 
 
 
