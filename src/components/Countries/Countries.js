@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Country from '../Country/Country';
 
+import './Countries.css'
+
 const Countries = () => {
 
 
@@ -19,7 +21,7 @@ const Countries = () => {
 
 
     return (
-        <div>
+        <div className='countries'>
 
             <h1>Countries in other file:{countries.length}</h1>
             {
