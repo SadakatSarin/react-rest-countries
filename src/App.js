@@ -1,53 +1,78 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
+import Countries from './components/Countries/Countries';
 
 function App() {
   return (
     <div className="App">
-      <LaodCountries></LaodCountries>
+
+      <Countries></Countries>
 
     </div>
   );
 }
 
-function LaodCountries() {
-  const [countries, setCountries] = useState([]);
-  useEffect(() => {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function LaodCountries() {
+//   const [countries, setCountries] = useState([]);
+//   useEffect(() => {
     
-    fetch('https://restcountries.com/v3.1/all')
-      .then(res=>res.json())
-    .then(data=>setCountries(data))
+//     fetch('https://restcountries.com/v3.1/all')
+//       .then(res=>res.json())
+//     .then(data=>setCountries(data))
 
-  },[])
+//   },[])
 
-  return (
+//   return (
   
-    <div>
+//     <div>
 
-      <h1>countries</h1>
-      <h3>available countries:{countries.length}</h3>
-      {
-        countries.map(country => <Country name={country.name.common} population={ country.population}></Country> )
-      }
+//       <h1>countries</h1>
+//       <h3>available countries:{countries.length}</h3>
+//       {
+//         countries.map(country => <Country name={country.name.common} population={ country.population}></Country> )
+//       }
 
-    </div>
-  );
-
-
-}
+//     </div>
+//   );
 
 
-function Country(props) {
+// }
+
+
+// function Country(props) {
   
-  return (
-    <div>
-      <h2>Name:{props.name}</h2>
-      <h4>population:{ props.population}</h4>
+//   return (
+//     <div>
+//       <h2>Name:{props.name}</h2>
+//       <h4>population:{ props.population}</h4>
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
 
 
