@@ -31,8 +31,7 @@ const Countries = () => {
                     
                     <Country
                     
-                    name={country.name.common}
-                    capital={country.capital}
+                        country={ country}
     
                     ></Country>)
 
